@@ -1,5 +1,5 @@
 {
-  "name": "react-inline-suggest",
+  "name": "@george.marcus/react-inline-suggest",
   "version": "1.0.1",
   "description": "A simple inline autosuggest input",
   "author": {
