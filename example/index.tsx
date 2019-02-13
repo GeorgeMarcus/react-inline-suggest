@@ -57,6 +57,7 @@ class ExampleApp extends React.Component<ExampleApp.Props, ExampleApp.State> {
             onMatch={v => console.log(v)}
             shouldRenderSuggestion={v => (v as string).trim().length > 1}
             switchBetweenSuggestions={true}
+            inputClass={ "george-class" }
           />
         </div>
       </div>

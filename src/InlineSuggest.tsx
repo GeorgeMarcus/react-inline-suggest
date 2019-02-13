@@ -11,7 +11,8 @@ const propsToOmit = [
   'ignoreCase',
   'className',
   'shouldRenderSuggestion',
-  'switchBetweenSuggestions'
+  'switchBetweenSuggestions',
+  'inputClass',
 ];
 
 export namespace InlineSuggest {
@@ -24,6 +25,7 @@ export namespace InlineSuggest {
     ignoreCase?: boolean;
     shouldRenderSuggestion?: (value: string | any) => boolean;
     switchBetweenSuggestions?: boolean;
+    inputClass?: any;
   };
 
   export type State = {
@@ -59,6 +61,7 @@ export class InlineSuggest extends React.Component<
       <div className={`inline-suggest ${this.props.className}`}>
         <input
           {...omit(this.props, propsToOmit)}
+          className={ this.props.inputClass }
           style={{ background: 'transparent' }}
           value={this.props.value}
           onChange={this.handleOnChange}
