@@ -1,6 +1,6 @@
 {
   "name": "@george.marcus/react-inline-suggest",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple inline autosuggest input",
   "author": {
     "name": "Maciej Kański",

@@ -188,7 +188,9 @@ export class InlineSuggest extends React.Component<
         keyCode === KeyEnum.ENTER ||
         keyCode === KeyEnum.RIGHT_ARROW)
     ) {
-      const newValue = `${this.props.value}${this.state.needle}`;
+      // const newValue = `${this.props.value}${this.state.needle}`;
+      // Make matched string match the casing from the haystack
+      const newValue = this.state.matchedArray[this.state.activeIndex]
       const newEvent = {
         ...e,
         currentTarget: {
